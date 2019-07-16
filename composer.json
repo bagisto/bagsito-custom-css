@@ -1,0 +1,26 @@
+{
+    "name": "bagisto/custom-css",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Prashant Singh",
+            "email": "prashant.singh852@webkul.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\CustomCSS\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\CustomCSS\\Providers\\CustomCSSServiceProvider"
+            ],
+            "aliases": { }
+        }
+    },
+    "minimum-stability": "dev"
+}
