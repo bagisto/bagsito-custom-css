@@ -14,7 +14,7 @@ class CustomCSSServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            dirname(__DIR__) . '/Resources/assets/sass/shop.css' => public_path('themes/default/assets')
+            __DIR__ . '/../../publishable/assets/saas' => public_path('themes/default/assets/css'),
         ], 'public');
     }
 }

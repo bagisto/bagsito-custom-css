@@ -21,3 +21,11 @@ for production do:
 ~~~
 npm run prod
 ~~~
+
+or
+
+~~~
+php artisan vendor:publish --force
+
+select number for CustomCSSServiceProvider and hit enter.
+~~~

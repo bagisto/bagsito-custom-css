@@ -10,7 +10,7 @@ if (mix.inProduction()) {
 mix.setPublicPath(publicPath).mergeManifest();
 mix.disableNotifications();
 
-mix.copy('Resources/assets/css/shop.css', 'css/shop.css');
+mix.sass(__dirname + "/src/Resources/assets/sass/shop.scss", "css/shop.css");
 
 if (mix.inProduction()) {
     mix.version();
