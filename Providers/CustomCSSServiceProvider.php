@@ -14,7 +14,7 @@ class CustomCSSServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            dirname(__DIR__) . '/Resources/assets/sass/shop.css' => base_path('public/vendor/webkul/stripe/assets/css/stripe.css')
-        ]);
+            dirname(__DIR__) . '/Resources/assets/sass/shop.css' => public_path('themes/default/assets')
+        ], 'public');
     }
 }
